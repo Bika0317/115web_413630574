@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <!-- 設定文字編碼，避免中文顯示亂碼 -->
+  <meta charset="UTF-8">
+
+  <!-- 讓網頁能適應手機與不同螢幕尺寸 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 設定瀏覽器分頁標題 -->
+  <title>比卡 Bika｜創作與學習小站</title>
+  <!-- 樣式放在目前的 HTML 中，方便一起閱讀與修改 -->
+  <style>
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body { margin: 0; background: #fff; color: #222; font-family: "Microsoft JhengHei", sans-serif; line-height: 1.9; }
+    header, main, footer { width: min(880px, 90%); margin-inline: auto; }
+    header { padding: 56px 0 28px; border-bottom: 1px solid #ddd; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.4; }
+    h2 { color: inherit; font-size: 1.4rem; }
+    header p, footer { color: #555; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    a { color: #0000ee; text-underline-offset: 5px; }
+    a:hover { color: #000099; }
+    a:focus-visible { outline: 2px solid #0000ee; outline-offset: 5px; }
+    section, main > div { padding: 26px 0; border-bottom: 1px solid #ddd; scroll-margin-top: 20px; }
+    img { display: block; max-width: 100%; height: auto; border-radius: 16px; margin: 20px 0; }
+    li { margin-block: 10px; }
+    table { width: 100%; border-collapse: collapse; }
+    caption { text-align: left; color: #555; margin-bottom: 12px; }
+    th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
+    th { background: #fff; }
+    th:first-child, td:first-child { white-space: nowrap; }
+    footer { padding: 24px 0; font-size: .9rem; }
+    @media (max-width: 480px) { header { padding-top: 28px; } th, td { padding: 10px 6px; } }
+  </style>
+</head>
+
+<body>
+  <!-- header：網頁的頁首區域 -->
+  <header>
+    <!-- h1：網頁最主要的標題 -->
+    <h1>比卡 Bika｜創作與學習小站</h1>
+    <p>保持好奇，把喜歡的事慢慢做成作品。</p>
+
+    <!-- nav：放置網頁導覽連結 -->
+    <nav>
+      <!-- 連結到目前的首頁 -->
+      <a href="index.html">首頁</a>
+
+      <!-- 連結到關於我頁面 -->
+      <a href="about.html">關於我</a>
+      <a href="#portfolio">創作分享</a>
+      <a href="https://github.com/Bika0317" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+      <!-- 連結到外部網站 -->
+      <!-- target="_blank" 代表在新分頁開啟 -->
+      <a
+        href="https://www.tku.edu.tw/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        淡江大學
+      </a>
+    </nav>
+  </header>
+
+  <!-- main：網頁的主要內容 -->
+  <main>
+
+    <!-- section：自我介紹區域 -->
+    <section id="about">
+      <h2>嗨，我是 Bika！</h2>
+
+      <!-- 插入圖片 -->
+      <!-- src：圖片檔案的位置 -->
+      <!-- alt：圖片無法顯示時的替代文字 -->
+      <!-- width：設定圖片寬度 -->
+      <img
+        src="image/Bika.png"
+        alt="Bika 的個人代表圖片"
+        width="200"
+      >
+
+      <!-- p：建立段落 -->
+      <p>
+        大家好，我是比卡 Bika，一名就讀資訊管理系的大學生。
+        我喜歡研究感興趣的事，也在打工的過程中接觸資料庫與金融系統。這裡記錄我的網頁練習、創作興趣與學習足跡。
+      </p>
+
+      <!-- strong：表示重要或需要強調的文字 -->
+      <!-- em：表示語氣上的強調文字 -->
+      <p>
+        目前正在探索
+        <strong>網頁設計</strong>
+        與
+        <em>資訊安全</em>，也持續練習程式開發。希望每一次動手，都能讓想法更接近實際作品。
+      </p>
+    </section>
+
+    <!-- section：興趣清單區域 -->
+    <section>
+      <h2>我的興趣</h2>
+
+      <!-- ul：建立無序清單 -->
+      <ul>
+        <!-- li：清單中的一個項目 -->
+        <li><strong>唱歌與音樂：</strong>探索適合自己的練習方式，也喜歡交流唱歌的心得。</li>
+        <li><strong>繪畫與創作：</strong>透過手繪、電繪與 Minecraft 建築，練習把腦中的畫面呈現出來。</li>
+        <li><strong>程式與資料庫：</strong>從課堂與實作累積經驗，理解資料如何儲存，以及系統如何運作。</li>
+      </ul>
+    </section>
+
+    <!-- section：連結到個人網站的作品分類 -->
+    <section id="portfolio">
+      <h2>課堂之外，我也在創作</h2>
+      <p>除了寫程式，我也用畫面與聲音記錄生活。作品還在慢慢累積，每一次嘗試都值得留下來。</p>
+      <ul>
+        <li><strong>視覺創作：</strong>手繪、電繪與 Minecraft 建築的練習紀錄。</li>
+        <li><strong>音樂作品：</strong>唱歌與聲音創作的分享。</li>
+        <li><strong>程式專案：</strong>持續更新的實作與學習筆記。</li>
+      </ul>
+      <p><a href="https://bika0317.github.io/#portfolio" target="_blank" rel="noopener noreferrer">前往我的完整作品集 ↗</a></p>
+    </section>
+    <!-- section：學習步驟區域 -->
+    <section>
+      <h2>我的網頁學習計畫</h2>
+
+      <!-- ol：建立有順序的清單 -->
+      <ol>
+        <li>學習 HTML，建立清楚的網頁內容與結構</li>
+        <li>練習 CSS，設計配色、排版與不同螢幕的版面</li>
+        <li>學習 JavaScript，讓網頁加入互動功能</li>
+      </ol>
+    </section>
+
+    <!-- section：課程表格區域 -->
+    <section>
+      <h2>學習筆記</h2>
+
+      <!-- table：建立表格 -->
+      <table>
+        <!-- caption：設定表格標題 -->
+        <caption>網頁設計入門學習紀錄</caption>
+
+        <!-- thead：表格的標題區域 -->
+        <thead>
+          <tr>
+            <!-- th：表格標題欄位 -->
+            <th scope="col">週次</th>
+            <th scope="col">學習主題</th>
+          </tr>
+        </thead>
+
+        <!-- tbody：表格的資料內容區域 -->
+        <tbody>
+          <!-- tr：建立一列表格資料 -->
+          <tr>
+            <!-- td：一般資料欄位 -->
+            <td>Week 1</td>
+            <td>認識 GitHub 與建立開發環境</td>
+          </tr>
+
+          <tr>
+            <td>Week 2</td>
+            <td>練習 Git 版本控制與提交變更</td>
+          </tr>
+
+          <tr>
+            <td>Week 3</td>
+            <td>使用 HTML 製作個人網頁</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- div：一般區塊容器，本身沒有特殊語意 -->
+    <div>
+      <h2>給自己的小目標</h2>
+
+      <!-- 記錄自己的學習目標 -->
+      <p>
+        每天累積一點練習，遇到問題就查資料、動手測試，慢慢做出屬於自己的作品。
+      </p>
+    </div>
+  </main>
+
+  <!-- footer：網頁的頁尾區域 -->
+  <footer>
+    <p>© 2026 Bika 的學習小站</p>
+  </footer>
+</body>
+
+</html>
